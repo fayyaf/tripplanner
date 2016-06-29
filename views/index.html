@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Trip Planner</title>
+	</head>
+	<body>
+	Hotels:
+	{% for hotel in hotels %}
+    <li>
+        {{ hotel.name }}
+    </li>
+    {% endfor %}
+    <br>
+    Restaurants:
+	{% for restaurant in restaurants %}
+    <li>
+        {{ restaurant.name }}
+    </li>
+    {% endfor %}
+    <br>
+    Activities:
+	{% for activity in activities %}
+    <li>
+        {{ activity.name }}
+    </li>
+    {% endfor %}
+
+<!-- 		Hotels:
+		<select>
+			<option value="{{ hotel.name }}">{{ hotel.name }}</option>
+		</select>
+
+		Restaurants:
+		<select>
+			<option value="{{ restaurant.name }}">{{ restaurant.name }}</option>
+		</select>
+
+		Activities:
+		<select>
+			<option value="{{ activity.name }}">{{ activity.name }}</option>
+		</select> -->
+	</body>
+</html>
